@@ -8,6 +8,8 @@
   --border-color: #eeeeee;
   --margin-standart: 30px;
   --gap-picters: 30px;
+  --background-color: #f5f4fa;
+  --icon-color: #afb1b8;
 }
 
 /* base */
@@ -156,7 +158,6 @@ ol {
 
 .mail-tel {
   font-weight: 500;
-  font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--gray-color);
@@ -165,13 +166,27 @@ ol {
   padding-top: 27px;
   padding-bottom: 32px;
 }
+.header-contact-icon {
+  fill: currentColor;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
 
 /*HERO*/
 .hero {
-  background-color: var(--bkgr-color);
-
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 200px 0;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/img-background.jpg);
+  max-width: 1600px;
+  margin: 0 auto;
+  background-position: center;
+  background-color: #c4c4c4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hero-title {
@@ -217,6 +232,7 @@ ol {
 .advanteges-section {
   padding-bottom: 0;
 }
+
 .advantages-list {
   display: flex;
   /* padding-top: 94px; */
@@ -225,6 +241,17 @@ ol {
 .advantages-list-item:not(:last-child) {
   margin-right: var(--margin-standart);
   max-width: 270px;
+}
+.advanteges-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: var(--background-color);
+  gap: 30px;
 }
 
 .advantages-title {
@@ -266,7 +293,7 @@ ol {
 }
 
 .our-team {
-  background-color: #f5f4fa;
+  background-color: var(--background-color);
 }
 
 /* .team-title {
@@ -284,7 +311,7 @@ ol {
   line-height: 1.18;
   text-align: center;
   color: var(--first-color);
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
 }
 
 .team-list-item:not(:last-child) {
@@ -305,11 +332,85 @@ ol {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.team-contacts {
+  gap: 10px;
+  justify-content: center;
+  display: flex;
+}
+
+.team-item-logo {
+  width: 44px;
+  height: 44px;
+}
+
+.team-contact-link {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: #000000;
+  /* color: var(--icon-color);
+  background-color: var(--white-color); */
+}
+
+.team-contact-link:hover,
+.team-contact-link:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+.team-icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
+.client-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.client-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--icon-color);
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.client-item {
+  width: 170px;
+  height: 92px;
+}
+
+.client-logo {
+  fill: currentColor;
+  width: 106px;
+  height: 60px;
 }
 
 .style-footer {
   background: var(--bkgr-color);
   padding: 60px 0;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-flex {
@@ -349,6 +450,43 @@ ol {
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.join-wrapper {
+  margin-left: 70px;
+}
+.join-tittle {
+  letter-spacing: 0.03em;
+  line-height: 1.14;
+  margin-bottom: 20px;
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+.footer-social-list {
+  display: flex;
+  gap: 10px;
+}
+.footer-social-container {
+  width: 44px;
+  height: 44px;
+}
+.footer-social-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social-icon:hover,
+.footer-social-icon:focus {
+  background-color: var(--accent-color);
+}
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--white-color);
 }
 
 /*---------------------portfolio----------------*/
@@ -395,6 +533,7 @@ ol {
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
 }
+
 .item-of-job {
   display: inline-block;
 }
