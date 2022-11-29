@@ -166,6 +166,7 @@ ol {
   padding-top: 27px;
   padding-bottom: 32px;
 }
+
 .header-contact-icon {
   fill: currentColor;
   width: 16px;
@@ -242,6 +243,7 @@ ol {
   margin-right: var(--margin-standart);
   max-width: 270px;
 }
+
 .advanteges-icons {
   display: flex;
   justify-content: center;
@@ -296,22 +298,17 @@ ol {
   background-color: var(--background-color);
 }
 
-/* .team-title {
-  padding-top: 50px;
-} */
-
 .our-team-list {
   display: flex;
   justify-content: center;
 }
 
-.team-name {
+work .team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   color: var(--first-color);
-  /* padding-bottom: 10px; */
 }
 
 .team-list-item:not(:last-child) {
@@ -321,6 +318,7 @@ ol {
 .team-list-item {
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 0px 0px 4px 4px;
   background-color: var(--white-color);
 }
 
@@ -364,6 +362,7 @@ ol {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
+
 .team-icon {
   fill: currentColor;
   width: 20px;
@@ -375,6 +374,7 @@ ol {
   justify-content: center;
   gap: 30px;
 }
+
 .client-link {
   width: 100%;
   height: 100%;
@@ -455,6 +455,7 @@ ol {
 .join-wrapper {
   margin-left: 70px;
 }
+
 .join-tittle {
   letter-spacing: 0.03em;
   line-height: 1.14;
@@ -462,14 +463,17 @@ ol {
   color: var(--white-color);
   text-transform: uppercase;
 }
+
 .footer-social-list {
   display: flex;
   gap: 10px;
 }
+
 .footer-social-container {
   width: 44px;
   height: 44px;
 }
+
 .footer-social-icon {
   width: 100%;
   height: 100%;
@@ -479,10 +483,12 @@ ol {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 }
+
 .footer-social-icon:hover,
 .footer-social-icon:focus {
   background-color: var(--accent-color);
 }
+
 .footer-icon {
   width: 20px;
   height: 20px;
@@ -536,6 +542,12 @@ ol {
 
 .item-of-job {
   display: inline-block;
+}
+
+.item-of-job:hover,
+.item-of-job:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-title {
